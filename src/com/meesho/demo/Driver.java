@@ -11,11 +11,11 @@ public class Driver {
             ObjectMapper mapper = new ObjectMapper();
 
             //read JSON file and map to JAVA POJO
-            Student student = mapper.readValue(new File("data/sample-lite.json"), Student.class);
+            Student student = mapper.readValue(new File("data/sample-full.json"), Student.class);
 
             //print first and last name
-            System.out.println("First Name: " + student.getFirstName());
-            System.out.println("Last Name: " + student.getLastName());
+            System.out.println(student);
+
 
         }
         catch (Exception e){
